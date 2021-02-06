@@ -43,6 +43,6 @@ services:
 
     restart: always
     ports:
-      - ${PMA_HOST_MACHINE_PORT}:80
+      - ${PMA_HOST_MACHINE_PORT-8080}:80
     volumes:
       - /sessions
